@@ -178,7 +178,7 @@ h2 {
 }
 
 .offer {
-  height: 400px;
+  margin-bottom: 50px;
 }
 
 .offer--inner {
@@ -215,13 +215,35 @@ h2 {
   max-width: 258px;
 }
 
-.offerSlider {
-  height: 414px;
-}
-
 .offerSlider .swiper-slide {
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.offerSlider .swiper-slide img {
+  border-radius: 30px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.offerSlider .swiper-slide::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 1.5%;
+  bottom: 0%;
+  border-radius: 30px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(9484341b61fdcaace467038da90ba24c.jpg);
+  box-shadow: 0px -5px 15px rgba(171, 171, 171, 0.1);
+}
+
+.offer__btn__mask {
+  position: absolute;
+  right: -1px;
+  bottom: -5px;
+  z-index: 10;
 }
 
 .offer__btn {
